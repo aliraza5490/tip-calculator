@@ -19,6 +19,7 @@ header {
   padding: 2em 0;
   text-align: center;
 }
+
 header .logo {
   margin: 0 auto;
 }
@@ -28,24 +29,29 @@ main {
   border-radius: 1.2em;
   padding: 2.2em 1.7em;
 }
+
 main .calculator {
   position: relative;
 }
+
 main .calculator label {
   display: block;
   margin-bottom: 0.5em;
   color: hsl(186deg, 14%, 43%);
   cursor: pointer;
 }
+
 main .calculator .input {
   position: relative;
 }
+
 main .calculator .input img {
   position: absolute;
   top: 30%;
   left: 1em;
   z-index: 100;
 }
+
 main .calculator .input input[type='text'] {
   position: relative;
   width: 100%;
@@ -58,13 +64,16 @@ main .calculator .input input[type='text'] {
   background: hsl(189deg, 41%, 97%);
   outline: none;
 }
+
 main .calculator .bill,
 main .calculator .people-num {
   margin: 1em 0;
 }
+
 main .calculator .tip {
   margin: 2em 0;
 }
+
 main .calculator .tip .tip-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(136px, 1fr));
@@ -72,13 +81,16 @@ main .calculator .tip .tip-container {
   grid-gap: 1em;
   /* Hide the browser's default checkbox */
 }
+
 main .calculator .tip .tip-container input[type='radio'] {
   display: none;
 }
-main .calculator .tip .tip-container input[type='radio']:checked + .tip-label {
+
+main .calculator .tip .tip-container input[type='radio']:checked+.tip-label {
   background: hsl(172deg, 67%, 45%);
   color: hsl(183deg, 100%, 15%);
 }
+
 main .calculator .tip .tip-container label {
   margin: 0;
   padding: 0.3em 0;
@@ -89,6 +101,7 @@ main .calculator .tip .tip-container label {
   font-size: 24px;
   font-weight: bold;
 }
+
 main .calculator .tip .tip-container input[type='text'] {
   border: none;
   text-align: center;
@@ -96,25 +109,30 @@ main .calculator .tip .tip-container input[type='text'] {
   font-size: 24px;
   font-weight: bold;
 }
+
 main .display {
   border-radius: 0.5em;
   padding: 2em 1em;
   color: white;
   background: hsl(183deg, 100%, 15%);
 }
+
 main .display .bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 2em;
 }
+
 main .display .bar .info h5 {
   color: hsl(186deg, 14%, 43%);
 }
+
 main .display .bar h2 {
   color: hsl(172deg, 67%, 45%);
   font-size: 2.1rem;
 }
+
 main .display button {
   width: 100%;
   border: none;
@@ -127,6 +145,7 @@ main .display button {
   text-transform: uppercase;
   cursor: pointer;
 }
+
 @media (min-width: 768px) {
   main {
     padding: 2em;
@@ -134,20 +153,24 @@ main .display button {
     margin: 0 auto;
   }
 }
+
 @media (min-width: 1024px) {
   main {
     display: flex;
     justify-content: space-between;
   }
+
   main .calculator {
     width: 47%;
   }
+
   main .display {
     height: inherit;
     width: 50%;
     position: relative;
     padding: 2em;
   }
+
   main .display button {
     position: absolute;
     bottom: 2em;
@@ -155,6 +178,7 @@ main .display button {
     width: 87%;
   }
 }
+
 @media (min-width: 1200px) {
   main {
     width: 100%;
@@ -166,10 +190,14 @@ footer {
   text-align: center;
   font-family: sans-serif;
 }
+
 footer a {
   color: hsl(172deg, 67%, 45%);
   text-decoration: none;
 }
+
 footer a:hover {
   text-decoration: underline;
-} /*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */

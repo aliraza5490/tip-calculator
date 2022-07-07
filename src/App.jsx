@@ -1,8 +1,5 @@
 import * as React from 'react';
 import './style.css';
-import logo from './images/logo.svg';
-import dollarIcon from './images/icon-dollar.svg';
-import perosnIcon from './images/icon-person.svg';
 
 export default function App() {
   const [bill, setBill] = React.useState(0);
@@ -67,7 +64,7 @@ export default function App() {
   };
 
   const handleCustomTipFocus = () => {
-    const checkedBox: HTMLInputElement = document.querySelector(
+    const checkedBox = document.querySelector(
       "input[type='radio']:checked"
     );
     if (checkedBox) {
@@ -88,7 +85,7 @@ export default function App() {
     <React.Fragment>
       <header>
         <div className="logo">
-          <img src={logo} alt="splitter logo" />
+          <img src="/images/logo.svg" alt="splitter logo" />
         </div>
       </header>
 
@@ -97,7 +94,7 @@ export default function App() {
           <div className="bill">
             <label htmlFor="bill">Bill</label>
             <div className="input">
-              <img src={dollarIcon} alt="dollar icon" />
+              <img src="/images/icon-dollar.svg" alt="dollar icon" />
               <input
                 type="text"
                 id="bill"
@@ -147,7 +144,7 @@ export default function App() {
           <div className="people-num">
             <label htmlFor="people">Number of People</label>
             <div className="input">
-              <img src={perosnIcon} alt="person icon" />
+              <img src='/images/icon-person.svg' alt="person icon" />
               <input
                 type="text"
                 id="people"

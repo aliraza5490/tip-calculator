@@ -1,3 +1,2 @@
-# react-ts-dqfmdd
-
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-ts-dqfmdd)
+# Tip Calculator Built with ReactJS
+#### Link: https://purple-bush-0d994b910.1.azurestaticapps.net/
